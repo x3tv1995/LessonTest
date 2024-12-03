@@ -51,7 +51,7 @@ class TaskServiceTest {
 
         List<String> resultList = new ArrayList<>();
         resultList.add("123"+" "+3);
-        Assertions.assertIterableEquals(resultList,taskService.getTasksWithLength(list));
+        Assertions.assertEquals(resultList,taskService.getTasksWithLength(list));
     }
 
     @Test
